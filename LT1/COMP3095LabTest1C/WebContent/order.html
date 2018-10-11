@@ -1,0 +1,44 @@
+<!-- 
+COMP3095
+Neel Patel - 101093829
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<fieldset>
+		<form method="post" action="order">
+			<h1>Online Pizza Ordering System</h1>
+			<br />
+			<p>Fields marked with * are required</p>
+			<hr>
+			<label>Email* </label> <input type="text" name="email" /> <br /> <label>Street
+				Address* </label> <input type="text" name="address" /> <label>Postal
+				Code* </label> <input type="text" name="postalCode" /> <br />
+			<hr>
+			<label>Size*</label>
+			<fieldset>
+				<input type="radio" name="size" value="small"> Small<br />
+				<input type="radio" name="size" value="medium"> Medium<br />
+				<input type="radio" name="size" value="large"> Large<br />
+				<input type="radio" name="size" value="xlarge"> XLarge
+			</fieldset>
+			<label>Type*</label> <select>
+				<option value="" selected disabled hidden>Please Select</option>
+				<option value="pepperoni" name="type">Pepperoni</option>
+				<option value="hawaiian" name="type">Hawaiian</option>
+				<option value="vegetarian" name="type">Vegetarian</option>
+			</select>
+			<label>Special Instructions</label>
+			<textarea rows="4" cols="50">
+			</textarea>
+			<hr>
+			<button type="submit"> SUBMIT ORDER</button>
+		</form>
+	</fieldset>
+
+</body>
+</html>
